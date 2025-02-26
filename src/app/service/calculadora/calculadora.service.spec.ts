@@ -14,22 +14,22 @@ describe('CalculadoraService', () => {
   });
 
   it('should add two numbers correctly', () => {
-    expect(service.addition(2, 3)).toBe(5);
+    expect(service.suma(2, 3)).toBe(5);
   });
 
   it('should subtract two numbers correctly', () => {
-    expect(service.soustraction(5, 3)).toBe(2);
+    expect(service.resta(5, 3)).toBe(2);
   });
 
   it('should multiply two numbers correctly', () => {
-    expect(service.multiplication(2, 3)).toBe(6);
+    expect(service.multiplicacio(2, 3)).toBe(6);
   });
 
   it('should divide two numbers correctly', () => {
-    expect(service.division(6, 3)).toBe(2);
+    expect(service.divisio(6, 3)).toBe(2);
   });
 
   it('should throw an error when dividing by zero', () => {
-    expect(() => service.division(6, 0)).toThrowError('Cannot divide by zero');
+    expect(() => service.divisio(6, 0)).toThrowError('No es possible dividir per zero');
   });
 });
