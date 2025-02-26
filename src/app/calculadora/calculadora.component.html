@@ -1,0 +1,14 @@
+<div>
+    <h1>Calculadora</h1>
+    <input type="number" [(ngModel)]="num1" placeholder="Nombre 1">
+    <input type="number" [(ngModel)]="num2" placeholder="Nombre 2">
+    
+    <button (click)="suma()">+</button>
+    <button (click)="resta()">-</button>
+    <button (click)="multiplicacio()">x</button>
+    <button (click)="divisio()">/</button>
+    
+    <p>Resultat : {{ result }}</p>
+    <p *ngIf="error">{{ error }}</p>
+  </div>
+  
