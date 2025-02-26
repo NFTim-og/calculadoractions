@@ -30,6 +30,6 @@ describe('CalculadoraService', () => {
   });
 
   it('should throw an error when dividing by zero', () => {
-    expect(() => service.divisio(6, 0)).toThrowError('No es possible dividir per zero');
+    expect(() => service.divisio(6, 0)).toThrowError('No es pot dividir per zero');
   });
 });
